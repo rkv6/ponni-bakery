@@ -101,7 +101,8 @@ function Order() {
     `Total: ${rupees(total)}`,
     `Name: ${name.trim()}`,
   ].join('\n')
-  const href = `https://wa.me/${SHOP.whatsapp}?text=${encodeURIComponent(message)}`
+  // The WhatsApp number lives in a server setting (see api/order.js), not in this page.
+  const href = `/api/order?text=${encodeURIComponent(message)}`
 
   return (
     <section id="order" className="section order">
@@ -192,9 +193,6 @@ function Visit() {
         <p className="visit-actions">
           <a className="btn btn-ink" href={SHOP.mapsUrl} target="_blank" rel="noopener noreferrer">
             Open in Maps
-          </a>
-          <a className="btn btn-line" href={`tel:+${SHOP.whatsapp}`}>
-            Call {SHOP.phoneLabel}
           </a>
         </p>
       </div>

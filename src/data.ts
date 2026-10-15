@@ -4,8 +4,6 @@ export const SHOP = {
   area: 'Fort Kochi',
   address: 'Princess Street, Fort Kochi, Kochi 682001',
   mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Princess+Street+Fort+Kochi',
-  whatsapp: '910000000000', // placeholder number: replace with the real one
-  phoneLabel: '+91 00000 00000',
 }
 
 export type Slot = { time: string; mins: number; items: string }
