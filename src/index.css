@@ -1,5 +1,5 @@
 :root {
-  color-scheme: only light;
+  color-scheme: light;
   --turmeric: #f2b705;
   --ink: #14213d;
   --leaf: #1e6b4a;
@@ -12,7 +12,7 @@
   --pad: clamp(1.25rem, 5vw, 4rem);
 }
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; background: var(--paper); }
 body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--body); font-size: 1.0625rem; line-height: 1.55; -webkit-font-smoothing: antialiased; }
 a { color: inherit; }
 ul, ol { list-style: none; margin: 0; padding: 0; }
